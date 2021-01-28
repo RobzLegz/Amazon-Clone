@@ -1,0 +1,27 @@
+.header-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+.logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+  -webkit-filter: invert(100%);
+}
+.header-search-icon {
+  padding: 5px;
+  hanging-punctuation: 22px !important;
+  background-color: #cd9042;
+}
+.header-search-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
