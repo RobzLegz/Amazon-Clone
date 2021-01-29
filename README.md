@@ -1,3 +1,12 @@
+# Video
+<a href="https://www.youtube.com/watch?v=el8jnK8p7Ww"><img src="src/screenshots/amzonscreen1.png"></a>
+
+# Screenshots
+
+<img src="src/screenshots/amzonscreen1.png">
+
+<img src="src/screenshots/amzonscreen2.png">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
