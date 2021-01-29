@@ -2,7 +2,7 @@
 <a href="https://www.youtube.com/watch?v=el8jnK8p7Ww"><img src="src/screenshots/amzonscreen1.png"></a>
 
 # Screenshots
-
+<img src="src/screenshots/amzonscreen1.png">
 
 # Getting Started with Create React App
 
