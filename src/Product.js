@@ -18,7 +18,7 @@ const Product = ({title,image,price,rating, id}) => {
                 rating: rating,
             },
         });
-    };
+    }
 
     return (
         <div className="product-container">
