@@ -40,4 +40,4 @@ const Product = ({title,image,price,rating, id}) => {
     )
 }
 
-export default Product
+export default Product;

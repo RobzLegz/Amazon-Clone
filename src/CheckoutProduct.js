@@ -6,7 +6,7 @@ const CheckoutProduct = ({id, image, title, price, rating}) => {
 
     const [{basket}, dispatch] = useStateValue();
 
-    const removeBasketItem = () => {
+    const removeCartItem = () => {
         dispatch({
             type: "REMOVE_FROM_BASKET",
             id: id,
@@ -27,7 +27,7 @@ const CheckoutProduct = ({id, image, title, price, rating}) => {
                         <p>⭐</p>
                     ))}
                 </div>
-                <button onClick={removeBasketItem}>Remove from basket</button>
+                <button onClick={removeCartItem}>Remove from basket</button>
             </div>
             
         </div>
