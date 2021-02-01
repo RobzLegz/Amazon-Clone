@@ -7,11 +7,11 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const signIn = e => {
+    const signIn = (e) => {
         e.preventDefault();
     }
 
-    const register = e => {
+    const register = (e) => {
         e.preventDefault();
     }
 
@@ -27,10 +27,10 @@ const Login = () => {
                     <input type="email" value={email} onChange={e => setEmail(e.target.value)} required/>
                     <h5>Password</h5>
                     <input type="password" onChange={e => setPassword(e.target.value)} value={password} required/>
-                    <button type="submit" className="signin-btn">Sign In</button>
+                    <button type="submit" onClick={signIn} className="signin-btn">Sign In</button>
                 </form>
                 <p>By continuing, you agree to FAKE AMAZON'S Conditions of Use and Privacy Notice.</p>
-                <button onClick={register} className="register-btn" onClick={signIn}>Create your Amazon Account</button>
+                <button onClick={register} className="register-btn">Create your Amazon Account</button>
             </div>
         </div>
     )
