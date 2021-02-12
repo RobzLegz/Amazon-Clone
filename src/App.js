@@ -6,6 +6,7 @@ import { auth } from './firebase';
 import Header from './Header';
 import Home from './Home';
 import Login from './Login';
+import Payment from './Payment';
 import { useStateValue } from './StateProvider';
 
 const App = () => {
@@ -31,17 +32,21 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <Switch>
-          <Route path="/" exact>
-            <Header />
-            <Home />
-          </Route>
+        <Switch>          
           <Route path="/checkout">
             <Header />
             <Checkout />
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            <Payment />
+          </Route>
+          <Route path="/">
+            <Header />
+            <Home />
           </Route>
         </Switch>
       </div>
