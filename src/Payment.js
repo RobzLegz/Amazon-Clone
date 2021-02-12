@@ -30,6 +30,8 @@ const Payment = () => {
         }
         getClientSecret();
     }, [basket])
+
+    console.log(clientSecret)
     
     const handleCardSubmit = async (e) => {
         e.preventDefault();
