@@ -1,5 +1,5 @@
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
-import axios from 'axios';
+import axios from './axios';
 import React, { useEffect, useState } from 'react';
 import CurrencyFormat from 'react-currency-format';
 import { Link, useHistory } from 'react-router-dom';
@@ -27,14 +27,13 @@ const Payment = () => {
                 url: `/payments/create?total=${getBasketTotal(basket) * 100}`
             });
             setClientSecret(response.data.clientSecret)
-        }   
+        }
         getClientSecret();
     }, [basket])
     
     const handleCardSubmit = async (e) => {
         e.preventDefault();
         setProcessing(true);
-
         const payload = await stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: elements.getElement(CardElement)

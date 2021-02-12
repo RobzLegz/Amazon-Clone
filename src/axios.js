@@ -4,4 +4,4 @@ const instance = axios.create({
     baseURL: "..."
 });
 
-export default instancel;
+export default instance;
