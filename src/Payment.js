@@ -1,5 +1,5 @@
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CurrencyFormat from 'react-currency-format';
 import { Link } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
@@ -16,9 +16,20 @@ const Payment = () => {
     const [disabled, setDisabled] = useState(true);
     const [suceeded, setSuceeded] = useState(false);
     const [processing, setProcessing] = useState("");
+    const [clientSecret, setClientSecret] = useState(true);
 
-    const handleCardSubmit = e => {
-        
+    useEffect(() => {
+        const getClientSecret = async () => {
+            const response = await axios
+        }   
+        getClientSecret();
+    }, [basket])
+    
+    const handleCardSubmit = async (e) => {
+        e.preventDefault();
+        setProcessing(true);
+
+        // const payload = await stripe
     }
 
     const handleCardChange = e => {
